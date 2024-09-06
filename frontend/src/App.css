@@ -1,0 +1,63 @@
+body{
+  background-color: rgb(157, 204, 252);
+}
+
+.app {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+textarea {
+  width: 99%;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  font-size: 16px;
+  background-color: darkgray;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+}
+
+.notes-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.notes-table th,
+.notes-table td {
+  border: 1px solid #e0dada; /* Solid border */
+  padding: 10px;
+  text-align: left;
+}
+
+.notes-table th {
+  background-color: #f4f4f4;
+}
+
+.notes-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.notes-table tr:hover {
+  background-color: #eaeaea;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: rgb(119, 11, 11);
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
