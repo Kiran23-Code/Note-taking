@@ -1,6 +1,7 @@
 import express from "express";
 import notesRouter from './routes/noteRoutes'
 import cors from 'cors';
+const port = process.env.PORT || 3001;
 
 const app = express();
 
