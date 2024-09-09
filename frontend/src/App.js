@@ -11,7 +11,7 @@ function App() {
 
   const fetchNotes = async () => {
     try {
-      const response = await fetch('https://note-taking-backend-s9gy.onrender.com/api/notes');
+      const response = await fetch('http://localhost:3001/api/notes');
       const result = await response.json();
       setNotes(result);
     } catch (error) {
@@ -23,7 +23,7 @@ function App() {
     if (!noteContent) return alert('Note cannot be empty');
 
     try {
-      const response = await fetch('https://note-taking-backend-s9gy.onrender.com/api/notes', {
+      const response = await fetch('http://localhost:3001/api/notes', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ content: noteContent }),
@@ -39,7 +39,7 @@ function App() {
 
   const handleDeleteNote = async (id) => {
     try {
-      const response = await fetch(`https://note-taking-backend-s9gy.onrender.com/api/notes/${id}`, {
+      const response = await fetch(`http://localhost:3001/api/notes/${id}`, {
         method: 'DELETE',
       });
       const result = await response.json();
